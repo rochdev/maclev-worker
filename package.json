@@ -1,0 +1,29 @@
+{
+  "name": "maclev-worker",
+  "version": "0.0.0",
+  "description": "Worker for maclev.io",
+  "main": "lib/worker.js",
+  "scripts": {
+    "deploy": "zip maclev -FSr node_modules lib && iron worker upload --zip maclev.zip --name maclev iron/node node lib/worker"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rochdev/maclev.git"
+  },
+  "author": "rochdev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rochdev/maclev-worker/issues"
+  },
+  "homepage": "http://maclev.io",
+  "private": true,
+  "engines": {
+    "node": ">=4 <5"
+  },
+  "dependencies": {
+    "async": "^1.5.2",
+    "mongodb": "^2.1.4",
+    "require-dir": "^0.3.0",
+    "superagent": "^1.7.2"
+  }
+}
