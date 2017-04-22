@@ -21,9 +21,9 @@
     "node": ">=4 <5"
   },
   "dependencies": {
-    "async": "^1.5.2",
+    "async": "^2.3.0",
     "mongodb": "^2.1.4",
     "require-dir": "^0.3.0",
-    "superagent": "^1.7.2"
+    "superagent": "^3.5.2"
   }
 }
